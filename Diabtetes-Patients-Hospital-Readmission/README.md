@@ -184,11 +184,6 @@
   <p>The analysis reveals that while logistic regression and random forest models achieved the highest accuracy, they faced challenges with precision and recall, particularly with predicting readmissions. The logistic regression model, despite its accuracy, showed low precision and recall, indicating difficulties in correctly identifying patients who were readmitted within 30 days. Decision trees, while slightly less accurate, provided better interpretability and some improvement in precision and recall.</p>
 
 
-<h2>License</h2>
-<p>This repository is licensed under the MIT License. See the LICENSE file for more details.
-
-© 2024 charan312s. All rights reserved.</p>
-
 <h2>Contributing</h2>
 <p>Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.</p>
 </body>
