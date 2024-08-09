@@ -33,6 +33,10 @@
   <p>
       <strong>Speed Limit Analysis:</strong> By comparing speed limits with casualty counts, the project identifies how varying speed limits may influence the severity of accidents.
   </p>
+
+
+<h2>Contributing</h2>
+<p>Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.</p>
 </div>
 </body>
 </html>
