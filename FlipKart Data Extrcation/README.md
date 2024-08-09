@@ -42,7 +42,6 @@
             <th>Rating</th>
             <th>Number of Reviews</th>
             <th>Features</th>
-            <th>Availability</th>
         </tr>
     </thead>
     <tbody>
@@ -52,7 +51,6 @@
             <td>4.2</td>
             <td>34,500</td>
             <td>6GB RAM, 128GB Storage, 64MP Camera</td>
-            <td>In Stock</td>
         </tr>
         <tr>
             <td>Redmi Note 10 Pro</td>
@@ -60,7 +58,6 @@
             <td>4.5</td>
             <td>40,000</td>
             <td>8GB RAM, 128GB Storage, 108MP Camera</td>
-            <td>In Stock</td>
         </tr>
         <tr>
             <td>Realme 8 Pro</td>
@@ -68,7 +65,6 @@
             <td>4.3</td>
             <td>28,000</td>
             <td>6GB RAM, 128GB Storage, 48MP Camera</td>
-            <td>Out of Stock</td>
         </tr>
     </tbody>
 </table>
@@ -89,7 +85,9 @@
 <p>If you encounter rate limiting, consider slowing down your requests or using a proxy to avoid getting blocked.</p>
 
 <h2>License</h2>
-<p>This project is licensed under the MIT License. See the LICENSE file for details.</p>
+<p>This repository is licensed under the MIT License. See the LICENSE file for more details.
+
+© 2024 charan312s. All rights reserved.</p>
 
 <h2>Contributing</h2>
 <p>Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.</p>
