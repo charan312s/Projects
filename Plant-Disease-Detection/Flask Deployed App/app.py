@@ -7,12 +7,11 @@ import numpy as np
 import torch
 import pandas as pd
 
-
-disease_info = pd.read_csv('Plant-Disease-Detection\Flask Deployed App\disease_info.csv' , encoding='cp1252')
-supplement_info = pd.read_csv('Plant-Disease-Detection\Flask Deployed App\supplement_info.csv',encoding='cp1252')
+disease_info = pd.read_csv('/workspaces/Projects/Plant-Disease-Detection/Flask Deployed App/disease_info.csv' , encoding='cp1252')
+supplement_info = pd.read_csv('/workspaces/Projects/Plant-Disease-Detection/Flask Deployed App/supplement_info.csv',encoding='cp1252')
 
 model = CNN.CNN(39)    
-model.load_state_dict(torch.load("Plant-Disease-Detection\Flask Deployed App\plant_disease_model_1.pt"))
+model.load_state_dict(torch.load("/workspaces/Projects/Plant-Disease-Detection/Flask Deployed App/plant_disease_model_1_latest.pt", weights_only=True))
 model.eval()
 
 def prediction(image_path):
@@ -49,7 +48,7 @@ def submit():
     if request.method == 'POST':
         image = request.files['image']
         filename = image.filename
-        file_path = os.path.join(r'Plant-Disease-Detection/Flask Deployed App/static/uploads/'+filename)
+        file_path = os.path.join('/workspaces/Projects/Plant-Disease-Detection/Flask Deployed App/static/uploads'+filename)
         image.save(file_path)
         print(file_path)
         pred = prediction(file_path)
