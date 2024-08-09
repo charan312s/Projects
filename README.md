@@ -47,11 +47,6 @@
 <h2>Contact</h2>
 <p>If you have any questions or need further information, please reach out to me via email or through my GitHub profile.</p>
 
-<h2>License</h2>
-<p>This repository is licensed under the MIT License. See the LICENSE file for more details.</p>
-
-<footer>
-    <p>&copy; 2024 charan312s. All rights reserved.</p>
 </footer>
 </body>
 </html>
