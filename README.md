@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academic Projects Repository</title>
+<title>Academic Projects Repository</title>
 </head>
 <body>
     <h1>Academic Projects Repository</h1>
@@ -13,9 +13,8 @@
 <p>Here, you will find a diverse range of projects that span multiple domains such as:</p>
 <ul>
     <li>Data Science and Machine Learning</li>
-    <li>Web Development</li>
+    <li>Deep Learning</li>
     <li>Software Engineering</li>
-    <li>Embedded Systems</li>
     <li>Algorithm Design and Optimization</li>
     <li>And much more!</li>
 </ul>
@@ -33,7 +32,7 @@
 <p>To explore or run any of the projects, follow these general steps:</p>
 <ol>
     <li>Clone the repository to your local machine using the command:
-        <pre><code>git clone https://github.com/yourusername/your-repository.git</code></pre>
+        <pre><code>git clone https://github.com/charan312s/Projects.git</code></pre>
     </li>
     <li>Navigate to the desired project directory.</li>
     <li>Follow the instructions in the <strong>README.md</strong> file specific to that project to set up the environment and run the code.</li>
@@ -53,7 +52,7 @@
 <p>This repository is licensed under the MIT License. See the LICENSE file for more details.</p>
 
 <footer>
-    <p>&copy; 2024 Your Name. All rights reserved.</p>
+    <p>&copy; 2024 charan312s. All rights reserved.</p>
 </footer>
 </body>
 </html>
