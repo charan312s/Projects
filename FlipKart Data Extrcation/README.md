@@ -84,11 +84,6 @@
 <h3>Rate Limiting:</h3>
 <p>If you encounter rate limiting, consider slowing down your requests or using a proxy to avoid getting blocked.</p>
 
-<h2>License</h2>
-<p>This repository is licensed under the MIT License. See the LICENSE file for more details.
-
-© 2024 charan312s. All rights reserved.</p>
-
 <h2>Contributing</h2>
 <p>Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.</p>
 </body>
