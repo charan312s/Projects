@@ -110,7 +110,6 @@
 <h2>Troubleshooting</h2>
 <ul>
     <li><strong>Data Issues:</strong> Verify that the data follows the expected format before applying transformations. Check for any inconsistencies or missing values.</li>
-    <li><strong>Scaling Issues:</strong> Ensure that the scaling process for the goodness score is correctly normalized to the scale of 10.</li>
 </ul>
 
 <h2>Contributing</h2>
