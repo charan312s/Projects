@@ -28,33 +28,24 @@
     <pre><code>pip install -r requirements.txt</code></pre>
 </ul>
 
-<h2>Usage</h2>
-<p>To run the clustering analysis and generate advisories, execute the following script:</p>
-<pre><code>python clustering_analysis.py</code></pre>
-<p>The script will perform clustering, visualize the results, and generate advisories based on aggregated traffic data.</p>
+<<h2>Usage</h2>
+  <p>
+      Follow these steps to perform the analysis:
+  </p>
+  <ol>
+      <li>Load and preprocess the dataset to prepare it for analysis.</li>
+      <li>Conduct exploratory data analysis (EDA) to visualize and understand the data distribution.</li>
+      <li>Generate visualizations such as Heat maps, bar graphs, scatter plot, box plot etc..</li>
+  </ol>
 
-<h2>Clustering Analysis</h2>
-<p>The project uses K-means clustering with PCA for dimensionality reduction. The number of clusters is determined based on the optimal value of <code>k</code>. Clusters are visualized and analyzed to provide insights into traffic conditions.</p>
+  <h2>Summary</h2>
+  <p>
+      This project provides insights into banglore traffic trends by analyzing the data. By applying various data analysis techniques, we aim to better understand user behavior and optimize traffic.
+  </p>
 
-<h3>Example Visualization</h3>
-<p>The clustering results are visualized using a scatter plot with PCA components, colored by cluster labels.</p>
-<img src="path/to/your/visualization.png" alt="Clustering Visualization" width="600">
-
-<h2>Rule-Based Inference</h2>
-<p>Advisories are generated based on various metrics, including congestion levels, incident rates, environmental impact, average speed, and weather conditions. The advisories provide recommendations for traffic management and travel planning.</p>
-
-<h3>Example Advisory</h3>
-<p>For a specific area, an advisory might look like this:</p>
-<pre><code>Moderate Congestion: Expect delays, consider alternate routes. | High Incident Rate: Increased likelihood of delays due to incidents. | Low Environmental Impact: Air quality is within acceptable limits. | High Speed: Traffic is moving smoothly. | Normal Travel Time Index: Travel times are as expected. | Clear Weather: No adverse weather conditions reported.</code></pre>
 
 <h2>Contributing</h2>
-<p>Feel free to open issues or submit pull requests if you have suggestions for improvements or additional features.</p>
-
-<h2>License</h2>
-<p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
-
-<h2>Contact</h2>
-<p>If you have any questions, please contact me at <a href="mailto:your-email@example.com">your-email@example.com</a>.</p>
+<p>Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.</p>
 </div>
 </body>
 </html>
