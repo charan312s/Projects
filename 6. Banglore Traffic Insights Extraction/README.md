@@ -23,9 +23,13 @@
     <li>Clone the repository:</li>
     <pre><code>git clone https://github.com/yourusername/your-repo-name.git</code></pre>
     <li>Navigate to the project directory:</li>
-    <pre><code>cd your-repo-name</code></pre>
+    <pre><code>cd 6. Banglore Traffic Insights Extraction</code></pre>
     <li>Install the required Python packages:</li>
-    <pre><code>pip install -r requirements.txt</code></pre>
+    <pre><code>pip install numpy</code></pre>
+    <pre><code>pip install pandas</code></pre>
+    <pre><code>pip install matplotlib</code></pre>
+    <pre><code>pip install scatterplot</code></pre>
+    <pre><code>pip install plotly</code></pre>
 </ul>
 
 <<h2>Usage</h2>
