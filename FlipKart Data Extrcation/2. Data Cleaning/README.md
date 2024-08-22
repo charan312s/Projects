@@ -17,16 +17,18 @@
 <ol>
     <li><strong>Battery Column Processing:</strong> Extracted integer values from the battery information to provide a uniform format.</li>
     <li><strong>Warranty Column Processing:</strong> Converted warranty durations from months to years and removed unnecessary terms.</li>
-    <li><strong>Goodness Score Calculation:</strong> Calculated a goodness score based on rating, number of ratings, and number of reviews. The score was then normalized to a scale of 10.</li>
+    <li><strong>And many more</li>
 </ol>
 
 <h2>Requirements</h2>
 <p>To run the data cleaning code, you'll need the following Python libraries:</p>
 <ul>
     <li><code>pandas</code></li>
+    <li><code>regular expression</code></li>
 </ul>
 <p>You can install these dependencies using the following command:</p>
 <pre><code>pip install pandas</code></pre>
+<pre><code>pip install re</code></pre>
 
 <h2>DataFrame Structure</h2>
 <p>After cleaning, the data is stored in a Pandas DataFrame with the following attributes:</p>
@@ -50,7 +52,6 @@
     <li><strong>display_type</strong>: Display type (e.g., Retina, Normal Display).</li>
     <li><strong>rear_camera</strong>: Rear camera specifications.</li>
     <li><strong>front_camera</strong>: Front camera specifications.</li>
-    <li><strong>goodness_score_10</strong>: Normalized goodness score on a scale of 10.</li>
 </ul>
 
 <h2>Example DataFrame</h2>
@@ -76,7 +77,6 @@
             <th>display_type</th>
             <th>rear_camera</th>
             <th>front_camera</th>
-            <th>goodness_score_10</th>
         </tr>
     </thead>
     <tbody>
@@ -100,9 +100,7 @@
             <td>Retina</td>
             <td>24.0MP</td>
             <td>12MP</td>
-            <td>9.6</td>
         </tr>
-        <!-- Add more rows as needed -->
     </tbody>
 </table>
 
