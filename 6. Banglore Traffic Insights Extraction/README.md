@@ -33,7 +33,7 @@
 </ul>
 
 
-<<h2>Usage</h2>
+<h2>Usage</h2>
   <p>
       Follow these steps to perform the analysis:
   </p>
