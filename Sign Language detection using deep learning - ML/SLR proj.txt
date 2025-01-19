@@ -1,0 +1,73 @@
+import numpy as np
+import tensorflow as tf
+import cv2
+
+# Load the MNIST dataset
+mnist = tf.keras.datasets.mnist
+
+# Split the dataset into training and testing sets
+(x_train, y_train), (x_test, y_test) = mnist.load_data()
+
+# Define the labels for the ASL alphabet letters
+labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+# Define the size of the video stream or images
+img_size = 28
+
+# Reshape the training and testing data
+x_train = x_train.reshape(x_train.shape[0], img_size, img_size, 1)
+x_test = x_test.reshape(x_test.shape[0], img_size, img_size, 1)
+
+# Normalize the pixel values of the training and testing data
+x_train = x_train.astype('float32') / 255
+x_test = x_test.astype('float32') / 255
+
+# Convert the labels to one-hot encoding
+y_train = tf.keras.utils.to_categorical(y_train)
+y_test = tf.keras.utils.to_categorical(y_test)
+
+# Define the model architecture
+model = tf.keras.models.Sequential([
+    tf.keras.layers.Conv2D(32, (3,3), activation='relu', input_shape=(img_size,img_size,1)),
+    tf.keras.layers.MaxPooling2D(2,2),
+    tf.keras.layers.Flatten(),
+    tf.keras.layers.Dense(128, activation='relu'),
+    tf.keras.layers.Dense(26, activation='softmax')
+])
+
+# Compile the model
+model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+
+# Train the model
+model.fit(x_train, y_train, epochs=10, validation_data=(x_test, y_test))
+
+# Define the video stream source
+cap = cv2.VideoCapture(0)
+
+while True:
+    # Capture frame-by-frame
+    ret, frame = cap.read()
+
+    # Preprocess the image
+    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    gray = cv2.resize(gray, (img_size, img_size))
+    gray = gray.reshape(1, img_size, img_size, 1)
+    gray = gray.astype('float32') / 255
+
+    # Recognize the ASL alphabet letter
+    prediction = model.predict(gray)
+    letter = labels[np.argmax(prediction)]
+
+    # Display the recognized letter on the video stream
+    cv2.putText(frame, "Letter: {}".format(letter), (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 255, 0), 2)
+
+    # Display the resulting frame
+    cv2.imshow('frame', frame)
+
+    # Exit the loop when 'q' is pressed
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+
+# Release the capture and close all windows
+cap.release()
+cv2.destroyAllWindows()
